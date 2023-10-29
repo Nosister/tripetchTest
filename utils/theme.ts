@@ -2,7 +2,7 @@
 import { createTheme } from "@mui/material/styles";
 
 export  const theme = createTheme({
- 
+
  breakpoints: {
   values: {
     xs: 0,
@@ -10,8 +10,7 @@ export  const theme = createTheme({
     md: 768,
     lg: 1280,
     xl: 1920,
-
+    // xxl: 1920,
   },
-
 },
 });
