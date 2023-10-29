@@ -1,18 +1,19 @@
-"use client";
+"use clinet";
 
-import LandingPageDesktop from "@/container/LandingPage/LandingPageDesktop";
-import LandingPageMobile from "@/container/LandingPage/LandingPageMobile";
-import { Hidden } from "@mui/material";
+import TemperatureHumidity from "@/components/organism/TemperatureHumidity";
+import TotalSensor from "@/components/organism/TotalSensor";
+import {
+  Box,
+
+} from "@mui/material";
+
+
 
 export default function Home() {
   return (
-    <>
-      <Hidden mdDown>
-        <LandingPageDesktop />
-      </Hidden>{" "}
-      <Hidden mdUp>
-        <LandingPageMobile />
-      </Hidden>{" "}
-    </>
+    <Box component={"div"} sx={{maxWidth: "100%"}}>
+      <TotalSensor />
+      <TemperatureHumidity />
+    </Box>
   );
 }
